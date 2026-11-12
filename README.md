@@ -74,3 +74,4 @@ Kubernetes/Helm (feature 001), endurecimiento DevSecOps (002), observabilidad (0
 ## Diagnóstico rápido
 `GET /api/health` responde `{"servicio":"barberforge-ai","estado":"ok","base_de_datos":"ok"}`. Si la base falla, `base_de_datos` muestra el motivo (por ejemplo `password authentication failed`: la clave `DB_PASSWORD` no coincide con la del volumen `pgdata`; se corrige borrando ese volumen en Dokploy y redesplegando). Para Kubernetes: `GET /health` (liveness) y `GET /health/db` (readiness).
 # BarberForge
+# BarberForge
